@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  background: #0f172a;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logo {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  padding: 40px;
+}
+
+.home-wrapper {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-grid {
+  display: flex;
+  gap: 70px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.screen-wrapper {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+button.main-btn {
+  width: 260px;
+  height: 180px;
+  padding: 20px;
+  border-radius: 16px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+button.main-btn:hover {
+  background-color: #113eb9;
+  transform: translateY(-15px);
+}
+
+.back-btn {
+  margin-top: 45px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid #4e535f;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  background: #1e293b;
+}
+
+.puzzle-card {
+  width: min(600px, 90vw);
+  background: #111827;
+  border: 1px solid #223056;
+  padding: 22px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.puzzle-q {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.puzzle-input {
+  width: min(300px, 80%);
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: white;
+  outline: none;
+}
+
+.puzzle-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.puzzle-feedback {
+  margin-top: 16px;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+.logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.pomodoro-card {
+  width: min(700px, 90vw);
+  background: #111827;
+  border: 1px solid #223056;
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.timer-display {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.pomodoro-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.small-btn {
+  width: auto;
+  height: auto;
+  min-width: 120px;
+  padding: 14px 20px;
+}
+
+.pomodoro-message {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.break-prompt {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #334155;
+}
+
+.info-card {
+  width: min(700px, 90vw);
+  background: #111827;
+  border: 1px solid #223056;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.mindfulness-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #60a5fa;
+  margin: 24px auto;
+  animation: floatDot 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatDot {
+  from {
+    transform: translateX(-120px);
+  }
+  to {
+    transform: translateX(120px);
+  }
+}
+
+.simple-list {
+  text-align: left;
+  max-width: 260px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
+
+.visual-box {
+  width: min(500px, 80vw);
+  height: 180px;
+  border-radius: 18px;
+  border: 1px solid #334155;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(180deg, #1e3a8a, #0f172a);
+}
+
+.visual-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  position: absolute;
+  top: 55px;
+  left: 20px;
+  animation: drift 5s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(360px);
+  }
+}
